@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CodeJam-Canvas</title>
+</head>
+<body>
+    <header class="header">
+        <svg class="header__svg-first" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="black" fill-opacity="0.54"/>
+        </svg>                
+        <p class="header__text">CodeJam - Pallete</p>
+        <svg class="header__svg-second" width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 8C7.1 8 8 7.1 8 6C8 4.9 7.1 4 6 4C4.9 4 4 4.9 4 6C4 7.1 4.9 8 6 8ZM6 10C4.9 10 4 10.9 4 12C4 13.1 4.9 14 6 14C7.1 14 8 13.1 8 12C8 10.9 7.1 10 6 10ZM6 16C4.9 16 4 16.9 4 18C4 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16Z" fill="black" fill-opacity="0.54"/>
+        </svg>            
+    </header>
+    <main class="main">
+        <section class="menus">
+            <div class="menu__tools">
+                <div class="tools__tool">
+                    <img class="tools__icon" src="./data/tools_fill.jpg">
+                    <p class="tools__text">Paint bucket</p>
+                </div>
+                <div class="tools__tool">
+                    <img class="tools__icon" src="./data/tools_pipette.jpg">
+                    <p class="tools__text">Choose color</p>
+                </div>
+                <div class="tools__tool tools__tool-move">
+                    <img class="tools__icon" src="./data/tools_move.jpg">
+                    <p class="tools__text">Move</p>
+                </div>
+                <div class="tools__tool tools__tool-transform">
+                    <img class="tools__icon" src="./data/tools_arrows.jpg">
+                    <p class="tools__text">Transform</p>
+                </div>
+            </div>
+            <div class="menu__color">
+                <div class="color__type">
+                    <img class="color__icon" src="./data/color_grey.jpg">
+                    <p class="color__text">Current color</p>
+                </div>
+                <div class="color__type">
+                    <img class="color__icon" src="./data/color_green.jpg">
+                    <p class="color__text">Prev color</p>
+                </div>
+                <div class="color__type color__type-red">
+                    <img class="color__icon" src="./data/color_red.jpg">
+                    <p class="color__text">red</p>
+                </div>
+                <div class="color__type color__type-blue">
+                    <img class="color__icon" src="./data/color_blue.jpg">
+                    <p class="color__text">blue</p>
+                </div>
+            </div>
+        </section>
+        <section class="cnvs">
+            <canvas class="canvas" id="canvas" width="512" height="512"></canvas>
+        </section>
+        <section class="switches">
+                <button class="button button-sun" id="switch-sun">4*4</button>
+                <button class="button button-codewars" id="switch-codewars">32*32</button>
+                <button class="button button-rsscool" id="switch-rsscool">image</button>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
