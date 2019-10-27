@@ -1,4 +1,14 @@
 
+@font-face {
+    font-family: "RobotoLigth";
+    src: url("./fonts/Roboto-Light.ttf"); 
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("./fonts/Roboto-Regular.ttf"); 
+}
+
 body {
     width: 1440px;
     margin: auto;
@@ -7,7 +17,7 @@ body {
 .header {
     display: flex;
     width: 100%;
-    height: 48%;
+    height: 4%;
 } 
 
 .header__svg-first {
@@ -26,4 +36,50 @@ body {
 
 .header__svg-second {
     margin: 8px 16px 16px 0px;
+}
+
+.main {
+    display: flex;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    margin-right: 516px;
+}
+
+.menus p {
+    font-family: "RobotoLigth";
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.541327);
+}
+
+.menu__tools, .menu_color {
+    width: 228px;
+    height: 246px;
+}
+
+.tools__tool, .color__type {
+    display: flex;
+    
+}
+
+.menu__tools {
+    margin-bottom: 92px;
+}
+
+.cnvs {
+    width: 512px;
+    height: 512px;
+    background: cadetblue;
+}
+
+.canvas {
+    border: 1px solid black;
+}
+
+.switches {
+    display: flex;
+    flex-direction: column;
 }
