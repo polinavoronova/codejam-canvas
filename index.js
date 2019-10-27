@@ -73,3 +73,21 @@ function image() {
     }
 }
 /*image()*/
+
+
+/* SWITCHES */
+
+let sunButton = document.getElementById('switch-sun');
+sunButton.addEventListener('click', () => {
+    sun();
+});
+
+let piskelButton = document.getElementById('switch-codewars');
+piskelButton.addEventListener('click', () => {
+    codewars();
+});
+
+let rsscoolButton = document.getElementById('switch-rsscool');
+rsscoolButton.addEventListener('click', () => {
+    image();
+});
